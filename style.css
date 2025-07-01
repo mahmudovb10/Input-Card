@@ -1,11 +1,32 @@
-body {
+body,
+html {
   overflow-x: hidden;
   background-color: rgb(153, 164, 239);
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(153, 164, 239);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto; /* Markazga joylash */
+  padding: 0 1rem; /* Ichki bo‘sh joy */
+  box-sizing: border-box;
 }
 
 #form {
   position: relative;
-  left: 40rem;
+  left: 35rem;
   top: 5rem;
 }
 
@@ -54,6 +75,9 @@ body {
   border-color: whitesmoke;
   color: black;
   transition: 0.5s;
+  box-shadow: 3px 3px 17px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 3px 17px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 17px 2px rgba(0, 0, 0, 0.75);
 }
 
 #btn:hover {
@@ -64,12 +88,17 @@ body {
 
 .card {
   width: 18rem;
-  height: 20rem;
+  height: 19rem;
   border-radius: 1.2rem;
   position: relative;
   top: 8rem;
-  left: 40rem;
+  left: 33rem;
   background-color: rgb(176, 127, 222);
+  box-shadow: 3px 3px 17px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 3px 17px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 17px 2px rgba(0, 0, 0, 0.75);
+  padding: 1.5rem;
+  margin-bottom: 12rem;
 }
 
 #input4 {
@@ -79,7 +108,91 @@ body {
 }
 
 #input5 {
+  margin-top: 2rem;
   position: relative;
-  left: 0.7rem;
-  top: 1rem;
+  left: 0.9rem;
+}
+
+#name {
+  background-color: rgb(176, 127, 222, 0.5);
+  border-radius: 12px;
+  border: 2px solid rgb(176, 127, 222);
+  outline: none;
+  box-shadow: none;
+}
+#name::placeholder {
+  color: black;
+}
+#name:focus {
+  border: 2px solid rgb(176, 127, 222);
+}
+
+#email {
+  background-color: rgb(176, 127, 222, 0.5);
+  border-radius: 12px;
+  border: 2px solid rgb(176, 127, 222);
+  outline: none;
+  box-shadow: none;
+}
+#email::placeholder {
+  color: black;
+}
+#email:focus {
+  border: 2px solid rgb(176, 127, 222);
+}
+
+#avatar {
+  background-color: rgb(176, 127, 222, 0.75);
+  border-radius: 12px;
+  border: 2px solid rgb(176, 127, 222);
+  outline: none;
+  box-shadow: none;
+}
+#avatar::placeholder {
+  color: black;
+}
+#avatar:focus {
+  border: 2px solid rgb(176, 127, 222);
+}
+
+#age {
+  background-color: rgb(176, 127, 222, 0.75);
+  border-radius: 12px;
+  border: 2px solid rgb(176, 127, 222);
+  outline: none;
+  box-shadow: none;
+}
+#age::placeholder {
+  color: black;
+}
+#age:focus {
+  border: 2px solid rgb(176, 127, 222);
+}
+
+#work {
+  background-color: rgb(176, 127, 222, 0.75);
+  border-radius: 12px;
+  border: 2px solid rgb(176, 127, 222);
+  outline: none;
+  box-shadow: none;
+}
+#work::placeholder {
+  color: black;
+}
+#work:focus {
+  border: 2px solid rgb(176, 127, 222);
+}
+
+#footerText {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 37rem;
+}
+
+.footerTextIcon {
+  display: flex;
+  position: relative;
+  left: 11rem;
+  bottom: 1rem;
 }
